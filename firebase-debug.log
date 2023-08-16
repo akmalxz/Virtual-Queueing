@@ -1,0 +1,58 @@
+[debug] [2023-05-23T07:45:50.676Z] ----------------------------------------------------------------------
+[debug] [2023-05-23T07:45:50.678Z] Command:       /usr/local/bin/firebase /Users/akmalhakim/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init functions
+[debug] [2023-05-23T07:45:50.678Z] CLI Version:   12.1.0
+[debug] [2023-05-23T07:45:50.678Z] Platform:      darwin
+[debug] [2023-05-23T07:45:50.678Z] Node Version:  v16.16.0
+[debug] [2023-05-23T07:45:50.680Z] Time:          Tue May 23 2023 15:45:50 GMT+0800 (Malaysia Time)
+[debug] [2023-05-23T07:45:50.680Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-23T07:45:50.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-23T07:45:50.784Z] > authorizing via signed-in user (akimh944@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/akmalhakim
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-23T07:45:50.789Z] Using project from CLI flag: virtualqueueingapp
+[debug] [2023-05-23T07:45:50.791Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/virtualqueueingapp [none]
+[debug] [2023-05-23T07:45:51.646Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/virtualqueueingapp 200
+[debug] [2023-05-23T07:45:51.651Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/virtualqueueingapp {"projectId":"virtualqueueingapp","projectNumber":"607538488660","displayName":"VirtualQueueingApp","name":"projects/virtualqueueingapp","resources":{"hostingSite":"virtualqueueingapp","realtimeDatabaseInstance":"virtualqueueingapp-default-rtdb"},"state":"ACTIVE","etag":"1_1b4479c4-7cac-4592-9938-0caef1a63232"}
+[info] i  Using project virtualqueueingapp (VirtualQueueingApp) 
+[info] 
+=== Functions Setup
+[debug] [2023-05-23T07:45:51.670Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-23T07:45:51.673Z] > authorizing via signed-in user (akimh944@gmail.com)
+[debug] [2023-05-23T07:45:51.674Z] [iam] checking project virtualqueueingapp for permissions ["firebase.projects.get"]
+[debug] [2023-05-23T07:45:51.677Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/virtualqueueingapp:testIamPermissions [none]
+[debug] [2023-05-23T07:45:51.677Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/virtualqueueingapp:testIamPermissions x-goog-quota-user=projects/virtualqueueingapp
+[debug] [2023-05-23T07:45:51.677Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/virtualqueueingapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-23T07:45:52.876Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/virtualqueueingapp:testIamPermissions 200
+[debug] [2023-05-23T07:45:52.879Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/virtualqueueingapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-23T07:45:52.880Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-05-23T07:45:52.880Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/virtualqueueingapp
+[debug] [2023-05-23T07:45:52.888Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-05-23T07:45:52.890Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/virtualqueueingapp
+[debug] [2023-05-23T07:45:54.511Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/cloudfunctions.googleapis.com 200
+[debug] [2023-05-23T07:45:54.514Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-05-23T07:45:54.515Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/runtimeconfig.googleapis.com 200
+[debug] [2023-05-23T07:45:54.515Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/virtualqueueingapp/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
